@@ -105,7 +105,7 @@ class MMCScript(models.Model):
 class MMCLog(models.Model):
     created = models.DateField(auto_now=True)
     start = models.DateTimeField()
-    end = models.DateTimeField(auto_now=True)
+    end = models.DateTimeField()
     elapsed = models.FloatField()
     hostname = models.ForeignKey(MMCHost)
     script = models.ForeignKey(MMCScript)
